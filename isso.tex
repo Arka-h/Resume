@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{140E77}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{ARKA HALDI}
+\tagline{“Everything is theoretically impossible, until it is done. -Robert A. Heinlein”}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{Arka_resume} % Arka_resume
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{arkahaldi@iisc.ac.in}
+    \phone{9497327717}
+  \location{Mumbai, India}
+  \linkedin{www.linkedin.com/in/arkahaldi}
+  \github{https://github.com/Arka-h} 
+  \kaggle{https://www.kaggle.com/arka4h}
+  \hackerank{https://www.hackerrank.com/arka\_h}
+  %If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}%
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+% \cvsection[page1sidebar]{MOTIVATION}
+% \begin{itemize}
+% \item I like exploring new technologies, experimenting and problem solving. Having a keen interest in online competitions, and hackathons, I am motivated and always ready to learn more through workshops, coding competitions, hackakthons, conferences, mentors, follow forums, and journals on better coding techniques etc.
+% \end{itemize}
+
+\cvsection[page1sidebar]{Education}
+\cvproject{M.Tech res (CDS)}{7.6 CGPA}{2025}{Indian Institute of Technology, Bangalore}
+\cvproject{B.Tech (CSE)}{9.21 CGPA}{2022}{Sardar Patel Institute of Technology}
+\cvproject{HSC (XII)}{93.3\%}{2018}{PACE Junior College, Dadar}
+\cvproject{CBSE (X) }{96.6\%}{2016}{Navy Children School, Kochi}
+
+
+\cvsection{Experience}
+\cvprojlinkless{Barclays}{Aug 2022 - July 2023}{
+\begin{itemize}
+\item Worked as a Graduate Analyst, in Data-QE role. Daily responsibilities include creating detailed test cases, conducting reviews to ensure accuracy, and collaborating across teams to fix bugs.
+% \item Delivered a critical project, taking end-to-end QE ownership; engaging with the product owner, developer, and AWS team despite frequent changes, and ensured timely delivery with quality coverage.
+\item Recognized for Drive within organisation \& active participant in various programs, events, hackathons etc.
+\item Proposed and created a POC for automation scripts, streamlining the process and reducing manual work by 70\%, saving 80\% time of testcase creation/management \& code checkouts.
+\item Skills/tools - SQL, PL-SQL, Ab Initio GDE, ETL processes, Data Warehousing, Data Architecture, Operating System (UNIX coding), Apache Hadoop(HQL), Data Migration, Data Cleansing, Cyara Automation, IVR testing. 
+\end{itemize}
+}
+\divider
+
+% \cvprojlinkless{UniConn Internship}{Oct 2020 - Aug 2021}
+% {
+% \begin{itemize}
+% \item Was part of the core tech team & recommended database architectural improvements, design solutions and integration solutions.
+% \item Provided continued development, and also created & maintained custom React components. Main responsibilities included integration of frontend / backend.
+% \item Tools Used - Nodejs, MongoDB Atlas, mongoose, Express, React, Passport, Redux, GridFS, OpenAPI3
+% \end{itemize}
+% }
+\cvsection{Publications}
+\cvproject{\href{https://doi.org/10.1007/978-3-031-31407-0_40}{CV Based Mechanism for Detecting Fire and Its Classes}}{ICCVIP, Springer}{May 2023}{}
+\begin{itemize}
+    \item Our work presents a fast, robust fire detection model that localises, and classifies the fire into it's "class" depending on the source of fire in real-time from source footage(CCTV). This is important to first responders that can use the appropriate methods to subdue the fire, according to it's type.
+    \item Skills/tools: cv2, yolov5, pytorch, roboflow, dataset creation, data augmentation
+\end{itemize}
+
+\cvsection{UG Projects}
+\cvproject{Job Recruitment App}{https://github.com/Arka-h/JobApp}{Nov 2020}{}
+\begin{itemize}
+\item UI/UX centric Job application portal for Job seekers and Employers, to manage and review candidates/applied jobs.
+\item Lead a team of 3, we designed and built whole application within a week.
+\item Tools Used - React, MongoDB Atlas, Express, HTML, CSS, GridFS
+\end{itemize}
+% \divider
+
+% \cvproject{Email Feedback}{https://github.com/Arka-h/EmailFeedback}{Feb 2019}{}
+% \begin{itemize}
+% \item Simplify sending surveys to customers and collecting feedback. Single user can create multiple surveys and collect information responses to email.
+% \item Tools Used - MongoDB, Express, React, Redux, Node.js, Stripe API, ReactForms, SendGrid
+% \end{itemize}
+% \divider
+
+% \cvproject{ToDo Project(24hr dev. challenge)}{https://github.com/Arka-h/ToDo-App}{Oct 2020}{}
+% \begin{itemize}
+% \item Simple intuitive ToDo list with Google auth-sessions and completed/pending lists per user, submitted as a recruitment challenge for UniConn.
+% \item Tools Used - MongoDB, Express, Reactjs, Nodejs, Passportjs
+% \end{itemize}
+% \divider
+
+
+
+% \divider
+
+
+
+%  \cvsection{EXPERIENCES}
+%  \cvachievement{\faTrophy}{JPMC Code For Good }{
+% Participated in this prestigious hackathon, and one among randomly assigned team of 7, helped develop a data visualization app for waste management NGO }
+% \divider
+% \divider
+% \cvachievement{\faTrophy}{HackIt2.0}{ Participated in HackIt hackathon, and helped develop a Recruitment Assisting Platform at K.J.Somaiya college.}
+% \divider
+
+
+
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+% 
+% \nocite{*}
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+% 
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
